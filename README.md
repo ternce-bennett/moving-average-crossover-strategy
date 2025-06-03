@@ -3,9 +3,13 @@ This project is a simple Python program that uses two moving averages (50-day an
 Features:
 
 •	Download stock data from Yahoo Finance
+
 •	Apply a moving average crossover trading strategy
+
 •	Calculate key performance metrics (return, Sharpe ratio, drawdown)
+
 •	Visualize buy/sell signals and portfolio value
+
 •	Compare strategy performance to buy-and-hold
 
 Installation
