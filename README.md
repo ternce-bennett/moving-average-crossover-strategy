@@ -44,5 +44,4 @@ Make sure Python 3.8+ is installed, then install the required packages:
 ```bash
 
 pip install yfinance matplotlib pandas
-pip install yfinance matplotlib pandas
 
