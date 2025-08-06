@@ -1,22 +1,48 @@
-This project is a simple Python program that uses two moving averages (50-day and 200-day) to decide when to buy or sell a stock. It backtests this strategy using historical data, calculates performance metrics like total return and risk, and compares the results to simply holding the stock. This helps beginners learn about trading, data analysis, and Python programming.
+# Moving Average Crossover Trading Strategy
 
-Features:
+A simple Python program that implements a **moving average crossover trading strategy** using historical stock data. This project is designed for beginners to learn about algorithmic trading, data analysis, and Python programming.
 
-•	Download stock data from Yahoo Finance
+---
 
-•	Apply a moving average crossover trading strategy
+## 🚀 Project Overview
 
-•	Calculate key performance metrics (return, Sharpe ratio, drawdown)
+The strategy uses two moving averages—**50-day** and **200-day**—to generate buy and sell signals:
 
-•	Visualize buy/sell signals and portfolio value
+- **Buy signal:** When the 50-day moving average crosses above the 200-day moving average (golden cross).
+- **Sell signal:** When the 50-day moving average crosses below the 200-day moving average (death cross).
 
-•	Compare strategy performance to buy-and-hold
+The program backtests this strategy on historical stock price data, calculates performance metrics, and compares the results to a simple buy-and-hold approach.
 
-Installation
+---
 
-Make sure Python is installed. Then run:
-pip install yfinance matplotlib 
-Usage
+## 📌 Features
 
-Run the script with:
-python moving_average_strategy.py
+- Download historical stock data from Yahoo Finance using the `yfinance` package  
+- Apply the moving average crossover strategy  
+- Calculate key performance metrics including:  
+  - Total return  
+  - Sharpe ratio  
+  - Maximum drawdown  
+- Visualize buy/sell signals on price charts  
+- Plot portfolio value over time to compare strategy performance against buy-and-hold  
+
+---
+
+## 🧰 Tech Stack
+
+- Python  
+- yfinance  
+- Matplotlib  
+- Pandas  
+
+---
+
+## 💻 Installation
+
+Make sure Python 3.8+ is installed, then install the required packages:
+
+```bash
+
+pip install yfinance matplotlib pandas
+pip install yfinance matplotlib pandas
+
