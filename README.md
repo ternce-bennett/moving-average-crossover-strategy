@@ -1,47 +1,45 @@
-# Moving Average Crossover Trading Strategy
+# 📈 Moving Average Crossover Strategy
 
-A simple Python program that implements a **moving average crossover trading strategy** using historical stock data. This project is designed for beginners to learn about algorithmic trading, data analysis, and Python programming.
+A Python program implementing a moving average crossover trading strategy for stock market analysis.  
+This project calculates short-term and long-term moving averages to identify buy and sell signals, helping investors make data-driven trading decisions.
 
 ---
 
-## 🚀 Project Overview
-
-The strategy uses two moving averages—**50-day** and **200-day**—to generate buy and sell signals:
-
-- **Buy signal:** When the 50-day moving average crosses above the 200-day moving average (golden cross).
-- **Sell signal:** When the 50-day moving average crosses below the 200-day moving average (death cross).
-
-The program backtests this strategy on historical stock price data, calculates performance metrics, and compares the results to a simple buy-and-hold approach.
+## 📖 Overview
+The moving average crossover strategy is a popular technical analysis tool used to detect trend changes.  
+This project computes two moving averages (short and long windows) on historical stock price data and signals potential trades based on their crossover points.
 
 ---
 
 ## 📌 Features
 
-- Download historical stock data from Yahoo Finance using the `yfinance` package  
-- Apply the moving average crossover strategy  
-- Calculate key performance metrics including:  
-  - Total return  
-  - Sharpe ratio  
-  - Maximum drawdown  
-- Visualize buy/sell signals on price charts  
-- Plot portfolio value over time to compare strategy performance against buy-and-hold  
+| Feature                      | Description                                               |
+|------------------------------|-----------------------------------------------------------|
+| 📊 Short & Long Moving Averages | Calculates customizable short-term and long-term averages. |
+| 🔄 Crossover Signal Detection | Generates buy/sell signals based on moving average crossovers. |
+| 📅 Date Range Selection       | Analyze historical stock data over user-defined periods. |
+| 📈 Visualizations             | Plots stock prices with moving averages and signal markers. |
+| 🛠 Easy Configuration         | Adjustable parameters for moving average window sizes.   |
 
 ---
 
-## 🧰 Tech Stack
-
-- Python  
-- yfinance  
-- Matplotlib  
-- Pandas  
+## 🛠 Tech Stack
+- **Language:** Python 3.10  
+- **Libraries:** Pandas, NumPy, Matplotlib  
+- **Tools:** Jupyter Notebook / VS Code
 
 ---
 
-## 💻 Installation
-
-Make sure Python 3.8+ is installed, then install the required packages:
-
+## ⚙️ Setup & Installation
 ```bash
+# 1. Clone the repository
+git clone https://github.com/ternce-bennett/moving-average-crossover-strategy.git
+cd moving-average-crossover-strategy
 
-pip install yfinance matplotlib pandas
+# 2. Install dependencies
+pip install -r requirements.txt
 
+# 3. Run the strategy script or notebook
+python strategy.py
+# or
+jupyter notebook strategy.ipynb
